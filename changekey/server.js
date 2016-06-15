@@ -3,11 +3,16 @@ const http = require('http');
 const hostname = '127.0.0.1';
 const port = 3000;
 const accepturl = '/price';
-
+var getKey = function(input){
+    var result = /[?]key=(.*)?/.exec(input);
+    return result && result[1];
+}
+var acceptKey = "5";
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    if (req.url === accepturl) {
+    var key = getKey(req.url);
+    if (key === acceptKey) {
         res.end('real price\n');
     }
     else {
