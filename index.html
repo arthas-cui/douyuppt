@@ -42,14 +42,14 @@
 		<div class="slides">
 			<section>
 				<h1>
-					比较简单的反爬虫
+					编写一个猥琐的反爬虫系统是怎样一种体验
 				</h1>
 			</section>
 			<section>
 				<h1>为什么要反爬虫</h1>
 				<ol>
 					<li>
-						爬虫占总PV比例较高，这样浪费钱。
+						爬虫占总PV比例较高，这样浪费钱(尤其是三月份爬虫，也叫毕业生爬虫)。
 					</li>
 					<li>
 						公司可免费查询的资源被批量抓走， 丧失竞争力， 这样少赚钱。
@@ -58,6 +58,28 @@
 						爬虫是否涉嫌违法？ 如果是的话， 是否可以起诉要求赔偿？ 这样可以赚钱。
 					</li>
 				</ol>
+			</section>
+			<section>
+				<h3>
+					反什么样的爬虫
+				</h3>
+				<ul>
+					<li>
+						十分低级的应届毕业生
+					</li>
+					<li>
+						十分低级的创业小公司
+					</li>
+					<li>
+						不小心写错了没人去停止的失控小爬虫
+					</li>
+					<li>
+						成型的商业对手
+					</li>
+					<li>
+						抽风的搜索引擎
+					</li>
+				</ul>
 			</section>
 			<section>
 				<h1>定义</h1>
@@ -157,7 +179,27 @@
 				</ul>
 			</section>
 			<section>
-				<h3>demo</h3>
+				<h3>传统反爬虫手段</h3>
+				<ul>
+					<li>
+						后台对访问进行统计， 如果单个IP访问超过阈值， 予以封锁。
+					</li>
+					<li>
+						后台对访问进行统计， 如果单个session访问超过阈值， 予以封锁。
+					</li>
+					<li>
+						后台对访问进行统计， 如果单个userAgent访问超过阈值， 予以封锁。
+					</li>
+					<li>
+						以上的组合
+					</li>
+					<li>
+						效果均一般， 所以还是用JavaScript比较靠谱
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3>纯JavaScript反爬虫demo</h3>
 				<ul>
 					<li>
 						更改连接地址
@@ -165,17 +207,55 @@
 				</ul>
 			</section>
 			<section>
-				<h3>demo</h3>
+				<h3>纯JavaScript反爬虫demo</h3>
 				<ul>
 					<li>更改key</li>
 				</ul>
 			</section>
 			<section>
-				<h3>demo
+				<h3>纯JavaScript反爬虫demo
+				</h3>
+				<ul>
+					<li>
+						更改动态key
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3>纯JavaScript反爬虫demo
 				</h3>
 				<ul>
 					<li>
 						十分复杂的更改key
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3>
+					浏览器检测
+				</h3>
+				<ul>
+					<li>
+						检测IE 的bug
+					</li>
+					<li>
+						检测FF的严格
+					</li>
+					<li>
+						检测Chrome的强大特性
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3>
+					我抓到你了——然后该怎么办
+				</h3>
+				<ul>
+					<li>
+						不会引发生产事件——直接拦截
+					</li>
+					<li>
+						可能引发生产事件——给假数据(也叫投毒)
 					</li>
 				</ul>
 			</section>
@@ -186,13 +266,48 @@
 						DotA AI： de命令
 					</li>
 					<li>
-						当AI被击杀后， 它获取经验的倍数会提升。 
+						当AI被击杀后， 它获取经验的倍数会提升。
 					</li>
 					<li>
-						因此， 前期杀AI太多， AI会一身神装， 无法击杀。 
+						因此， 前期杀AI太多， AI会一身神装， 无法击杀。
 					</li>
 					<li>
 						正确的做法是， 压制对方等级， 但是不击杀。
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3>
+					心理战
+				</h3>
+				<ul>
+					<li>
+						挑衅
+					</li>
+					<li>
+						怜悯
+					</li>
+					<li>
+						嘲讽
+					</li>
+					<li>
+						猥琐
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3>
+					放水
+				</h3>
+				<ul>
+					<li>
+						程序员都不容易
+					</li>
+					<li>
+						做爬虫的尤其不容易
+					</li>
+					<li>
+						可怜可怜他们给他们一小口饭吃吧。 没准过几天你就因为反爬虫做得好， 改行做爬虫了
 					</li>
 				</ul>
 			</section>
