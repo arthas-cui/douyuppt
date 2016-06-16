@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 var request = require('request');
 var crawler = function () {
     request('http://localhost:3000/price', function (error, response, body) {

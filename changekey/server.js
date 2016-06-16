@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const http = require('http');
 
 const hostname = '127.0.0.1';
@@ -7,7 +9,7 @@ var getKey = function(input){
     var result = /[?]key=(.*)?/.exec(input);
     return result && result[1];
 }
-var acceptKey = "5";
+var acceptKey = "3";
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
