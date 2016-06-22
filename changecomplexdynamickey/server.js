@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 'use strict'
 const config = require('./web.config.js');
 const useEval = config.useEval;
