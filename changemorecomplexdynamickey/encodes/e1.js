@@ -3,6 +3,6 @@ module.exports = {
         return item-3;
     }, 
     decode:function(item){
-        return item+3*(+!!document);
+        return item+3*(+!(typeof document === 'undefined'));
     }
 }
